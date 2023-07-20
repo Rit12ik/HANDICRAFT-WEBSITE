@@ -1,9 +1,9 @@
 const { Schema, model } = require('../connection');
 const mySchema = new Schema({
     name: String,
-    company: String,
-    price: String,
+    price: Number,
     discription: String,
+    category: String,
     material: String,
     image: String
 })
