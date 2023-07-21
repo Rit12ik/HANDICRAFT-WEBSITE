@@ -13,6 +13,7 @@ import Singup from "./components/Singup";
 import ManageProducts from "./components/ManageProduct";
 import ListProduct from "./components/ListProduct";
 import { UserProvider } from "./UserContext";
+import Find from "./components/Find";
 
 const App = () => {
   return (
@@ -31,7 +32,7 @@ const App = () => {
             <Route element={<AddProduct />} path="Addproduct" />
             <Route element={<ManageProducts />} path="Manageproduct" />
             <Route element={<ListProduct />} path="browse" />
-            <Route element={<ListProduct />} path="browse/:category" />
+            <Route element={<Find />} path="browse/:category" />
           </Routes>
         </UserProvider>
       </BrowserRouter>
